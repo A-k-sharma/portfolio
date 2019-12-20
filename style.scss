@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid;
+    padding: 10px;
+    .main-container{
+        width: 100%;
+        height: 100%;
+        border: 3px solid;
+
+        .navbar{
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-top: double;
+            border-bottom: double;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-family: 'MedievalSharp', cursive;
+            .navbarRight{
+                width: 50%;
+                .navbar-nav{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+            }
+            .icon{
+                width: 50px;
+                height: 50px;
+            }
+            .nav-link{
+                color: black;
+            }
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        margin: 2px 8px;
+                    }
+                }
+            }
+        }
+        .mainContent{
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 70px;
+            text-align: center;
+            font-family: 'MedievalSharp', cursive;
+            font-weight: bolder;
+            
+
+            .homePage{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .headings{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 50px;
+                    h1{
+                        font-size: 70px;
+                    }
+                    img{
+                        margin-top: -25px;
+                    }
+                    
+                }
+                h4{
+                    font-size: 35px;
+                }
+                h4:before,
+                h4:after {
+                    height: 2px;
+                    content: "";
+                    display: inline-block;
+                    border: double;
+                    position: relative;
+                    width: 40%;
+                }
+                
+                h4:before {
+                    right: 0.5em;
+                    top: -8px;
+                    margin-left: -50%;
+                }
+                
+                h4:after {
+                    left: 0.5em;
+                    top: -8px;
+                    margin-right: -50%;
+                }               
+            }
+
+            .about{
+                display: flex;
+                flex-direction: column;
+                .heading{
+                    margin-bottom: 50px;
+                    h3 {
+                        overflow: hidden;
+                        text-align: center;
+                        font-size: 35px;
+                    }
+                    
+                    h3:before,
+                    h3:after {
+                        height: 2px;
+                        content: "";
+                        display: inline-block;
+                        border: double;
+                        position: relative;
+                        width: 20%;
+                    }
+                    
+                    h3:before {
+                        right: 0.5em;
+                        top: -8px;
+                        margin-left: -50%;
+                    }
+                    
+                    h3:after {
+                        left: 0.5em;
+                        top: -8px;
+                        margin-right: -50%;
+                    }
+                }
+                .row{
+                    .about-left{
+                        .image-container{
+                            width: 250px;
+                            height: 250px;
+                            border: double;
+                            border-radius: 50%;
+                            .profile{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .about-right{
+                        p{
+                            text-align: left;
+                            // word-wrap: ;
+                        }
+                    }
+                }
+            }
+
+
+            .work{
+                .heading{
+                    margin-bottom: 50px;
+                    h3 {
+                        overflow: hidden;
+                        text-align: center;
+                        font-size: 35px;
+                    }
+                    
+                    h3:before,
+                    h3:after {
+                        height: 2px;
+                        content: "";
+                        display: inline-block;
+                        border: double;
+                        position: relative;
+                        width: 20%;
+                    }
+                    
+                    h3:before {
+                        right: 0.5em;
+                        top: -8px;
+                        margin-left: -50%;
+                    }
+                    
+                    h3:after {
+                        left: 0.5em;
+                        top: -8px;
+                        margin-right: -50%;
+                    }
+                }
+                .sampleWork{
+                    width: 100%;
+                    display: flex;
+                    .card{
+                        border: double;
+                        border-radius: 0px;
+                        .card-img-top{
+                            height: 200px;
+                            border-bottom: 1px solid;
+                        }
+                    }
+                }
+            }
+
+
+            .contact{
+                .heading{
+                    margin-bottom: 50px;
+                    h3 {
+                        overflow: hidden;
+                        text-align: center;
+                        font-size: 35px;
+                    }
+                    
+                    h3:before,
+                    h3:after {
+                        height: 2px;
+                        content: "";
+                        display: inline-block;
+                        border: double;
+                        position: relative;
+                        width: 20%;
+                    }
+                    
+                    h3:before {
+                        right: 0.5em;
+                        top: -8px;
+                        margin-left: -50%;
+                    }
+                    
+                    h3:after {
+                        left: 0.5em;
+                        top: -8px;
+                        margin-right: -50%;
+                    }
+                }
+                .contact-form{
+                    width: 60%;
+                    margin: 0 auto;
+                    .input-group{
+                        border: 2px solid;
+                        textarea,
+                        input{
+                            outline: none;
+                            &:focus{
+                                box-shadow: none;
+                                outline: none;
+                                border: none;
+                            }
+                        }
+                    }
+                    .form-button{
+                        .btn{
+                            border: 2px solid;
+                            border-radius: 0px;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.socialIcon{
+    width: 100%;
+    margin-top: 50px;
+    ul{
+        
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            margin: 5px;
+            .fab{
+                font-size: 25px;
+                height: 50px;
+                width: 50px;
+                border: double;
+                border-radius: 50%;
+                padding: 10px;
+                background-color: #212529;
+                color: white;
+                font-weight: 300;
+            }
+        }
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 400px){
+    .App{
+        padding: 5px;
+        .main-container{
+            .navbar{
+                margin-top: 20px;
+                text-align: center;
+                .navbarLeft{
+                    display: block;
+                    width: 100%;
+                }
+                .navbarRight{
+                    font-size: 15px;
+                    width: 100%;
+                    .navbar-nav{
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+            .mainContent{
+                margin-top: 30px;
+                .homePage{
+                    .headings{
+                        margin-bottom: 20px;
+                        img{
+                            display: none;
+                        }
+                        h1{
+                            font-size: 2.5rem;
+                        }
+                        
+                    }
+                    h4{
+                        font-size: 20px;
+                    }
+                    h4::before,
+                    h4::after {
+                        display: none;
+                    }
+                    .socialIcon{
+                        margin-top: 30px;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+}
+
+
+
+.multi {
+    .carousel-inner .active.left {
+      left: -25%;
+    }
+    .carousel-inner .next {
+      left:  25%;
+    }
+    .carousel-inner .prev {
+      left: -25%;
+    }
+    .carousel-control {
+      width:  4%;
+    }
+    .carousel-control.left, .carousel-control.right {
+      margin-left:15px;
+      background-image:none;
+    }
+  }

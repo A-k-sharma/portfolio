@@ -1,0 +1,314 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid;
+  padding: 10px;
+}
+.App .main-container {
+  width: 100%;
+  height: 100%;
+  border: 3px solid;
+}
+.App .main-container .navbar {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-top: double;
+  border-bottom: double;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-family: "MedievalSharp", cursive;
+}
+.App .main-container .navbar .navbarRight {
+  width: 50%;
+}
+.App .main-container .navbar .navbarRight .navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.App .main-container .navbar .icon {
+  width: 50px;
+  height: 50px;
+}
+.App .main-container .navbar .nav-link {
+  color: black;
+}
+.App .main-container .navbar .collapse .navbar-nav .nav-item {
+  margin: 2px 8px;
+}
+.App .main-container .mainContent {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+  font-weight: bolder;
+}
+.App .main-container .mainContent .homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App .main-container .mainContent .homePage .headings {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.App .main-container .mainContent .homePage .headings h1 {
+  font-size: 70px;
+}
+.App .main-container .mainContent .homePage .headings img {
+  margin-top: -25px;
+}
+.App .main-container .mainContent .homePage h4 {
+  font-size: 35px;
+}
+.App .main-container .mainContent .homePage h4:before,
+.App .main-container .mainContent .homePage h4:after {
+  height: 2px;
+  content: "";
+  display: inline-block;
+  border: double;
+  position: relative;
+  width: 40%;
+}
+.App .main-container .mainContent .homePage h4:before {
+  right: 0.5em;
+  top: -8px;
+  margin-left: -50%;
+}
+.App .main-container .mainContent .homePage h4:after {
+  left: 0.5em;
+  top: -8px;
+  margin-right: -50%;
+}
+.App .main-container .mainContent .about {
+  display: flex;
+  flex-direction: column;
+}
+.App .main-container .mainContent .about .heading {
+  margin-bottom: 50px;
+}
+.App .main-container .mainContent .about .heading h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 35px;
+}
+.App .main-container .mainContent .about .heading h3:before,
+.App .main-container .mainContent .about .heading h3:after {
+  height: 2px;
+  content: "";
+  display: inline-block;
+  border: double;
+  position: relative;
+  width: 20%;
+}
+.App .main-container .mainContent .about .heading h3:before {
+  right: 0.5em;
+  top: -8px;
+  margin-left: -50%;
+}
+.App .main-container .mainContent .about .heading h3:after {
+  left: 0.5em;
+  top: -8px;
+  margin-right: -50%;
+}
+.App .main-container .mainContent .about .row .about-left .image-container {
+  width: 250px;
+  height: 250px;
+  border: double;
+  border-radius: 50%;
+}
+.App .main-container .mainContent .about .row .about-left .image-container .profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.App .main-container .mainContent .about .row .about-right p {
+  text-align: left;
+}
+.App .main-container .mainContent .work .heading {
+  margin-bottom: 50px;
+}
+.App .main-container .mainContent .work .heading h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 35px;
+}
+.App .main-container .mainContent .work .heading h3:before,
+.App .main-container .mainContent .work .heading h3:after {
+  height: 2px;
+  content: "";
+  display: inline-block;
+  border: double;
+  position: relative;
+  width: 20%;
+}
+.App .main-container .mainContent .work .heading h3:before {
+  right: 0.5em;
+  top: -8px;
+  margin-left: -50%;
+}
+.App .main-container .mainContent .work .heading h3:after {
+  left: 0.5em;
+  top: -8px;
+  margin-right: -50%;
+}
+.App .main-container .mainContent .work .sampleWork {
+  width: 100%;
+  display: flex;
+}
+.App .main-container .mainContent .work .sampleWork .card {
+  border: double;
+  border-radius: 0px;
+}
+.App .main-container .mainContent .work .sampleWork .card .card-img-top {
+  height: 200px;
+  border-bottom: 1px solid;
+}
+.App .main-container .mainContent .contact .heading {
+  margin-bottom: 50px;
+}
+.App .main-container .mainContent .contact .heading h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 35px;
+}
+.App .main-container .mainContent .contact .heading h3:before,
+.App .main-container .mainContent .contact .heading h3:after {
+  height: 2px;
+  content: "";
+  display: inline-block;
+  border: double;
+  position: relative;
+  width: 20%;
+}
+.App .main-container .mainContent .contact .heading h3:before {
+  right: 0.5em;
+  top: -8px;
+  margin-left: -50%;
+}
+.App .main-container .mainContent .contact .heading h3:after {
+  left: 0.5em;
+  top: -8px;
+  margin-right: -50%;
+}
+.App .main-container .mainContent .contact .contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+.App .main-container .mainContent .contact .contact-form .input-group {
+  border: 2px solid;
+}
+.App .main-container .mainContent .contact .contact-form .input-group textarea,
+.App .main-container .mainContent .contact .contact-form .input-group input {
+  outline: none;
+}
+.App .main-container .mainContent .contact .contact-form .input-group textarea:focus,
+.App .main-container .mainContent .contact .contact-form .input-group input:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.App .main-container .mainContent .contact .contact-form .form-button .btn {
+  border: 2px solid;
+  border-radius: 0px;
+  padding: 5px 15px;
+}
+
+.socialIcon {
+  width: 100%;
+  margin-top: 50px;
+}
+.socialIcon ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.socialIcon ul li {
+  margin: 5px;
+}
+.socialIcon ul li .fab {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border: double;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #212529;
+  color: white;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 400px) {
+  .App {
+    padding: 5px;
+  }
+  .App .main-container .navbar {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .App .main-container .navbar .navbarLeft {
+    display: block;
+    width: 100%;
+  }
+  .App .main-container .navbar .navbarRight {
+    font-size: 15px;
+    width: 100%;
+  }
+  .App .main-container .navbar .navbarRight .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .App .main-container .navbar .navbarRight .navbar-nav li {
+    width: 50%;
+  }
+  .App .main-container .mainContent {
+    margin-top: 30px;
+  }
+  .App .main-container .mainContent .homePage .headings {
+    margin-bottom: 20px;
+  }
+  .App .main-container .mainContent .homePage .headings img {
+    display: none;
+  }
+  .App .main-container .mainContent .homePage .headings h1 {
+    font-size: 2.5rem;
+  }
+  .App .main-container .mainContent .homePage h4 {
+    font-size: 20px;
+  }
+  .App .main-container .mainContent .homePage h4::before,
+.App .main-container .mainContent .homePage h4::after {
+    display: none;
+  }
+  .App .main-container .mainContent .homePage .socialIcon {
+    margin-top: 30px;
+  }
+}
+.multi .carousel-inner .active.left {
+  left: -25%;
+}
+.multi .carousel-inner .next {
+  left: 25%;
+}
+.multi .carousel-inner .prev {
+  left: -25%;
+}
+.multi .carousel-control {
+  width: 4%;
+}
+.multi .carousel-control.left, .multi .carousel-control.right {
+  margin-left: 15px;
+  background-image: none;
+}
+
+/*# sourceMappingURL=style.css.map */
