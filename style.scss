@@ -190,6 +190,7 @@
                     display: flex;
                     .card{
                         border: double;
+                        margin: 5px;
                         border-radius: 0px;
                         .card-img-top{
                             height: 200px;
@@ -284,8 +285,6 @@
         
     }
 }
-
-
 
 @media only screen and (max-width: 400px){
     .App{

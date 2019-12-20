@@ -1,11 +1,11 @@
 import React,{ useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import projectData from 'projectData.json';
 import ProjectTemplate from './projectTemplate';
-
+const data = require('../projectData.json');
 
 function Work(props) {
+    console.log('data',data);
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -48,10 +48,11 @@ function Work(props) {
                 swipeable
                 >
                     {
-                        projectData.map(item=>{
-                            <ProjectTemplate item={item}/>
+                        data.map(item=>{
+                            return <ProjectTemplate item={item}/>
                         })
                     }
+                    
                     
                 </Carousel>
             </div>

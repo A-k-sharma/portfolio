@@ -168,6 +168,7 @@
 }
 .App .main-container .mainContent .work .sampleWork .card {
   border: double;
+  margin: 5px;
   border-radius: 0px;
 }
 .App .main-container .mainContent .work .sampleWork .card .card-img-top {
