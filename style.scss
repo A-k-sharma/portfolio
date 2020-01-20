@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+//fonts cdn included
+//  font-family: 'Bitter', serif;
+// font-family: 'Rye', cursive;
 .App{
     width: 100vw;
     height: 100vh;
@@ -21,7 +27,7 @@
             border-bottom: double;
             font-weight: bolder;
             letter-spacing: 1px;
-            font-family: 'MedievalSharp', cursive;
+            font-family: 'Bitter', serif;
             .navbarRight{
                 width: 50%;
                 .navbar-nav{
@@ -29,6 +35,9 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
+                    li{
+                        margin: 0 5px;
+                    }
                 }
             }
             .icon{
@@ -51,7 +60,7 @@
             margin: 0 auto;
             margin-top: 70px;
             text-align: center;
-            font-family: 'MedievalSharp', cursive;
+            font-family: 'Rye', cursive;
             font-weight: bolder;
             
 
@@ -59,12 +68,15 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                .navPlaceholder{
+                    height: 100px;
+                }
                 .headings{
                     display: flex;
                     justify-content: center;
                     margin-bottom: 50px;
                     h1{
-                        font-size: 70px;
+                        font-size: 60px;
                     }
                     img{
                         margin-top: -25px;
@@ -94,7 +106,16 @@
                     left: 0.5em;
                     top: -8px;
                     margin-right: -50%;
-                }               
+                }     
+                .buttons{
+                    margin-top: 50px;
+                    margin: 20px 0px;
+                    .btn{
+                        border: 2px solid;
+                        border-radius: 0px;
+                        padding: 5px 15px;
+                    }
+                }          
             }
 
             .about{
@@ -146,13 +167,75 @@
                     }
                     .about-right{
                         p{
+                            display: flex;
+                            flex-direction: column;
                             text-align: left;
-                            // word-wrap: ;
+                            font-family: 'Times New Roman', Times, serif;
                         }
                     }
                 }
             }
-
+            .skill{
+                .heading{
+                    margin-bottom: 50px;
+                    h3 {
+                        overflow: hidden;
+                        text-align: center;
+                        font-size: 35px;
+                    }
+                    
+                    h3:before,
+                    h3:after {
+                        height: 2px;
+                        content: "";
+                        display: inline-block;
+                        border: double;
+                        position: relative;
+                        width: 20%;
+                    }
+                    
+                    h3:before {
+                        right: 0.5em;
+                        top: -8px;
+                        margin-left: -50%;
+                    }
+                    
+                    h3:after {
+                        left: 0.5em;
+                        top: -8px;
+                        margin-right: -50%;
+                    }
+                }
+                .row{
+                    .col-md-4{
+                        .card{
+                            width: 80%;
+                            height: 270px;
+                            margin: 0 auto;
+                            border: 2px solid;
+                            padding: 5px;
+                            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                            .card-header{
+                                background-color: white;
+                                h5{
+                                    margin-bottom: 10px;
+                                    letter-spacing: 1px;
+                                    text-decoration: underline;
+                                }
+                                
+                            }                        
+                            ul{
+                                list-style: none;
+                                li{
+                                    margin: 5px 0px;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
 
             .work{
                 .heading{

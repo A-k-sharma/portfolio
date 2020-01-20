@@ -18,9 +18,10 @@ function About() {
                 <div className="about-right col-md-8">
                     <div className='about-text'>
                         <p>
-                            A Fullstack web developer, working as a freelancer. Also a tech enthusiast trying to learn about technologies and exploring them atmost. I am in the development field since 2018 and since then I am learing everyday.
-                            technologies like Augmented reality and virtual reality have fascinated me the most. I love making new designs, playing with colors, creating new solutions and loves to .
-                            everything that I make has a Perfection inbuilt and with perfection there also comes "Quality" of Supreme Class.
+                            <span>Hey,</span>
+                            <span>I'm a fullstack developer based in Gurugram, India.</span>
+                            <span>I have passion for developing ideas into reality.</span>
+
                         </p>
                     </div>
                     <SocialIcons/>

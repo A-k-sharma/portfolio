@@ -23,7 +23,7 @@
   border-bottom: double;
   font-weight: bolder;
   letter-spacing: 1px;
-  font-family: "MedievalSharp", cursive;
+  font-family: "Bitter", serif;
 }
 .App .main-container .navbar .navbarRight {
   width: 50%;
@@ -33,6 +33,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.App .main-container .navbar .navbarRight .navbar-nav li {
+  margin: 0 5px;
 }
 .App .main-container .navbar .icon {
   width: 50px;
@@ -49,7 +52,7 @@
   margin: 0 auto;
   margin-top: 70px;
   text-align: center;
-  font-family: "MedievalSharp", cursive;
+  font-family: "Rye", cursive;
   font-weight: bolder;
 }
 .App .main-container .mainContent .homePage {
@@ -57,13 +60,16 @@
   flex-direction: column;
   align-items: center;
 }
+.App .main-container .mainContent .homePage .navPlaceholder {
+  height: 100px;
+}
 .App .main-container .mainContent .homePage .headings {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 .App .main-container .mainContent .homePage .headings h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 .App .main-container .mainContent .homePage .headings img {
   margin-top: -25px;
@@ -89,6 +95,15 @@
   left: 0.5em;
   top: -8px;
   margin-right: -50%;
+}
+.App .main-container .mainContent .homePage .buttons {
+  margin-top: 50px;
+  margin: 20px 0px;
+}
+.App .main-container .mainContent .homePage .buttons .btn {
+  border: 2px solid;
+  border-radius: 0px;
+  padding: 5px 15px;
 }
 .App .main-container .mainContent .about {
   display: flex;
@@ -133,7 +148,60 @@
   border-radius: 50%;
 }
 .App .main-container .mainContent .about .row .about-right p {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+.App .main-container .mainContent .skill .heading {
+  margin-bottom: 50px;
+}
+.App .main-container .mainContent .skill .heading h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 35px;
+}
+.App .main-container .mainContent .skill .heading h3:before,
+.App .main-container .mainContent .skill .heading h3:after {
+  height: 2px;
+  content: "";
+  display: inline-block;
+  border: double;
+  position: relative;
+  width: 20%;
+}
+.App .main-container .mainContent .skill .heading h3:before {
+  right: 0.5em;
+  top: -8px;
+  margin-left: -50%;
+}
+.App .main-container .mainContent .skill .heading h3:after {
+  left: 0.5em;
+  top: -8px;
+  margin-right: -50%;
+}
+.App .main-container .mainContent .skill .row .col-md-4 .card {
+  width: 80%;
+  height: 270px;
+  margin: 0 auto;
+  border: 2px solid;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.App .main-container .mainContent .skill .row .col-md-4 .card .card-header {
+  background-color: white;
+}
+.App .main-container .mainContent .skill .row .col-md-4 .card .card-header h5 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.App .main-container .mainContent .skill .row .col-md-4 .card ul {
+  list-style: none;
+}
+.App .main-container .mainContent .skill .row .col-md-4 .card ul li {
+  margin: 5px 0px;
+  letter-spacing: 1px;
 }
 .App .main-container .mainContent .work .heading {
   margin-bottom: 50px;

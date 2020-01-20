@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <div className="main-container">
           <Router>
-            <NavBar/>
+            {/* <NavBar/> */}
             <Routes/>
           </Router>
           
